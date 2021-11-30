@@ -1,0 +1,140 @@
+body {
+    font-family:Arial, Helvetica, sans-serif ;
+}
+
+/* -------------------- General classes -------------------- */
+.head {
+    font-size: 35pt;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.flexing {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.Album {
+    color: red;
+    font-family: 'Rubik', sans-serif;
+    text-shadow: rgb(47, 47, 47) 0px 5px 5px;
+}
+
+.Album img {
+    width: 500px;
+    margin: 20px;
+    border-radius: 30px;
+    border: 10px ridge gold;
+}
+
+.con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 50px;
+}
+
+.description {
+    font-size: 15pt;
+    width: 50%;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+}
+/* -------------------- navbar styling -------------------- */
+#navbar {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    width: 100%;
+    height: 90px;
+    background-color: rgb(85, 3, 3);
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgb(47, 47, 47) 10px 0px 10px 10px;
+    z-index: 5;
+}
+
+#navbar img {
+    width: 140px;
+    height: auto;
+    margin-left: 35px;
+    margin-top: 10px;
+    margin-bottom: auto;
+}
+
+#navbar div {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 100px;
+
+}
+#navbar div a {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    color: yellow;
+    text-decoration: none;   
+}
+
+#navbar div a:hover {
+    animation-name: button;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes button {
+  
+    100% {
+        background-color: black;
+        color: orange;
+    }
+}
+
+/* -------------------- Services styling -------------------- */
+
+#services-con {
+    position: relative;
+    left: 0px;
+    right: 0px;
+    background-color: rgb(255, 185, 34);
+    padding: 60px 0px 20px 0px;
+    z-index: 3;
+    text-align: center;
+}
+
+
+.services-tile h3 {
+    color: white;
+    font-size: 25pt;
+    margin: 10px 0px;
+    letter-spacing: 5px;    
+}
+
+.services-tile a {
+    text-decoration: none;
+}
+
+.services-tile h3:hover {
+    color: red;
+}
+
+/* -------------------- individual Service styling -------------------- */
+
+#big-con {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+}

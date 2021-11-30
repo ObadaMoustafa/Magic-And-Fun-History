@@ -1,0 +1,361 @@
+/* this is my video link ...... */
+
+body {
+    font-family:Arial, Helvetica, sans-serif ;
+}
+
+/* -------------------- General classes -------------------- */
+.head {
+    font-size: 35pt;
+    letter-spacing: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.flexing {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+    align-items: center;
+}
+
+/* -------------------- navbar styling -------------------- */
+#navbar {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    width: 100%;
+    height: 90px;
+    background-color: rgb(85, 3, 3);
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgb(47, 47, 47) 10px 0px 10px 10px;
+    z-index: 5;
+}
+
+#navbar img {
+    width: 140px;
+    height: auto;
+    margin-left: 35px;
+    margin-top: 10px;
+    margin-bottom: auto;
+}
+
+#navbar div {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+#navbar div a {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    color: yellow;
+    text-decoration: none;   
+}
+
+#navbar div a:hover {
+    animation-name: button;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes button {
+  
+    100% {
+        background-color: black;
+        color: orange;
+    }
+}
+
+/* -------------------- Home styling -------------------- */
+#home-con {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color:  rgb(85, 3, 3);
+    background-image: url(https://lh3.googleusercontent.com/pw/ACtC-3fhYotmxbLzFeQyG9J08evnmza7KW-CBaifGXGtzsEzOx8F4AX6EY3TDGnUpn97TOV1Xf7XWCPzBzqV4EJCvLJXLmxUDBOxJSDXbgPlsEqDy5LMRZzP6loQIdjVN5SQ-4YOmtxL8JKUowhyvhmZbjuO=w1600-h901-no?authuser=0);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.692) 10px 0px 10px 10px;
+    z-index: 3;
+}
+
+#homeheader {
+    position: absolute;
+    bottom: 35px;
+    left: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:  rgb(85, 3, 3);
+    border-radius: 60px;
+    padding: 20px 60px;
+    z-index: 4;
+}
+
+#homeheader h1 {
+    font-size: 60pt;
+    margin: 0px;
+    color: yellow;
+    text-shadow: white 0px 0px 10px;
+}
+
+#homeheader h2 {
+    font-size: 19pt;
+    letter-spacing: 5px;
+    margin: 0px;
+    color: orange;
+    text-shadow: white 0px 0px 10px;
+}
+
+/* -------------------- Big container styling -------------------- */
+#big-con {
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    right: 0px;
+}
+
+/* -------------------- About styling -------------------- */
+
+#about-con {
+    position: relative;
+    width: 100%;
+    background-color: rgb(255, 185, 34);
+    display: flex;
+    justify-content: space-around;
+    padding: 90px 0px 90px 0px;
+    margin: 0px;
+    z-index: 1;
+    text-align: justify;
+}
+
+#about-img {
+    width: 30%;
+    margin: 45px 0px auto 50px;
+    border: 2vw solid white;
+
+}
+#about-con div {
+    width: 50%;
+    margin: auto;
+    font-size: 17pt;
+}
+
+#about-con div h1 {
+    font-size: 35pt;
+}
+
+#about-con a {
+    color: rgb(85, 3, 3);
+    font-weight: bold;
+    text-decoration-style: dotted;
+}
+
+#about-con a:hover {
+    background-color: black;
+    color: orange;
+}
+
+#about-con li {
+    text-decoration: underline;
+}
+
+/* -------------------- Services styling -------------------- */
+
+#services-con {
+    position: relative;
+    background-color: rgb(255, 185, 34);
+    padding: 90px 0px 45px 0px;
+    z-index: 3;
+    text-align: center;
+    box-shadow: -10px 0px 10px 10px rgba(0, 0, 0, 0.692); 
+}
+
+.services-tile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.services-tile img {
+    width: 450px;
+    height: auto;
+    box-shadow: 0px 0px 10px 5px white;
+    border-radius: 30px;    
+}
+
+.services-tile h3 {
+    color: white;
+    font-size: 25pt;
+    margin: 10px 0px;
+    letter-spacing: 5px;    
+}
+
+.services-tile a {
+    text-decoration: none;
+}
+
+.services-tile h3:hover {
+    color: red;
+}
+
+/* -------------------- Pricing styling -------------------- */
+
+#pricing-con {
+    position: relative;
+    width: 100%;
+    background-color: rgb(255, 185, 34);
+    padding: 90px 0px 90px 0px;
+    margin: 0px;
+    z-index: 1; 
+}
+
+.package {
+    position: relative;
+    width: 450px;
+    height: 600px;
+    box-shadow: 0px 0px 10px 5px white;
+    border-radius: 30px;  
+    margin: 30px;
+    background-color: white;
+}
+
+.package img {
+    position: absolute;
+    top: -70px;
+    left: 120px;
+    height: 150px;
+}
+
+.package h3 {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 20pt;
+    text-decoration: underline;
+    text-decoration-style: double;
+    color: rgb(85, 3, 3);
+}
+
+#table1 {
+margin: 60px auto;
+width: 250px;
+height: 300px;
+
+}
+
+#table1 th {
+    font-size: 17pt;
+    text-align: left;
+    background-color: rgb(255, 185, 34);
+    padding: 10px;
+}
+
+#table1 td {
+    font-size: 14pt;
+    text-align: left;
+    background-color: rgba(255, 185, 34, 0.561);
+    padding: 10px;
+}   
+
+#table2 {
+    margin: 60px auto;
+    width: 350px;
+    height: 200px;
+}
+    
+#table2 th {
+    font-size: 17pt;
+    text-align: left;
+    background-color: rgb(255, 185, 34);
+    padding: 10px;
+}
+    
+#table2 td {
+    font-size: 14pt;
+    text-align: left;
+    background-color: rgba(255, 185, 34, 0.561);
+    padding: 10px;
+} 
+
+.submit {
+    position: absolute;
+    bottom: -27px;
+    border-radius: 20px;
+    width: 250px;
+    height: 50px;
+    font-size: 15pt;
+    font-weight: bold;
+    background-color: rgb(255, 185, 34);
+    left: 90px;
+}
+
+.pack-article {
+    padding: 50px;
+    text-align: justify;
+    font-size: 14pt;
+    margin-top: 70px;
+}
+
+.pack-note {
+    position: absolute;
+    bottom: 10px;
+    padding: 50px;
+    color: chocolate;
+    text-align: center;
+}
+
+/* -------------------- contacts styling -------------------- */
+#contacts-con {
+    position: relative;
+    width: 100%;
+    background-color: rgb(255, 185, 34);
+    padding: 90px 0px 90px 0px;
+    margin: 0px;
+    z-index: 3;
+    box-shadow: -10px 0px 10px 10px rgba(0, 0, 0, 0.692); 
+}
+
+.contacts {
+    width: 70%;
+    margin: auto;
+    font-size: 15pt;
+}
+
+.contacts img,a {
+    margin-right: 20px  ;
+    text-decoration: none;
+    color: darkred;
+    font-weight: bold;
+}
+
+.contacts div:hover {
+    animation-name: contacts;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes contacts {
+    100% {
+        margin-top: 25px;
+    }
+}
